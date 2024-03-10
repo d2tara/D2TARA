@@ -1,0 +1,26 @@
+
+  <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.expandAll()">Expand all</button>
+  <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.collapseAll()">Collapse all</button>
+
+  <hr />
+
+  <div ngbAccordion #accordion="ngbAccordion">
+    <div *ngFor="let capability of dataService.capabilities; let i = index" ngbAccordionItem [id]="'panel' + i">
+      <h2 ngbAccordionHeader>
+        <button ngbAccordionButton>{{ capability.name }}</button>
+      </h2>
+      <div ngbAccordionCollapse>
+        <div ngbAccordionBody>
+          <ng-template ngbPanelContent>
+            <div class="explanation">{{dataService.capabilities[i].explanation}}</div><br>
+            <app-select [(data)] = "dataService.data[i]" [title]="capability.name"></app-select>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+  
