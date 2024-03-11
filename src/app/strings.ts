@@ -17,7 +17,7 @@ export const capabilities = [
         kind: Capability.IMPACT
     },{
         name: 'Attack Path Analysis',
-        explanation: 'Identify the attack paths that implement each threat scenario. Attack path analysis can be done top-down in an attack tree analysis, or bottom-up by starting with known vulnerabilities and weaknesses, which are either discovered in a vulnerability analysis or publicly disclosed.',
+        explanation: 'Identify the attack paths that implement each threat scenario.',
         kind: Capability.ATTACK
     },{
         name: 'Feasibility Rating',
@@ -25,7 +25,7 @@ export const capabilities = [
         kind: Capability.FEASIB
     },{
         name: 'Risk Treatment Decision',
-        explanation: 'Determine a risk treatment option for each threat scenario by considering its calculated risk value. The available options are to avoid, reduce, share, or retain the risk. Avoiding the risk results in an item adjustment to remove the source of the risk. All other options require the specification of cybersecurity goals.',
+        explanation: 'Determine a risk treatment option for each threat scenario by considering its calculated risk value. The available options are to avoid, reduce, share, or retain the risk.',
         kind: Capability.RISKTREAT
     },
 ]
@@ -41,23 +41,23 @@ export enum CapabilityLevel{
 export const capabilityLevels = [
     {
         name: 'Undefined',
-        question: 'Data sources have not yet been considered. TARA is performed on the basis of expert knowledge.',
+        question: 'No external data sources are used for this data-driven TARA section.',
         color: '#eb4034'
     },{
         name: 'Ad hoc',
-        question: 'Have you retrieved information from external data sources on an ad hoc basis?',
+        question: 'Do you use external data sources on an ad hoc basis for this data-driven TARA section?',
         color: '#eb4034'
     },{
-        name: 'Completeness',
-        question: 'Did you use relevant external data sources while ensuring completeness of information?',
+        name: 'Standardization',
+        question: 'Are you using a standard pool of data sources for this data-driven TARA section?',
         color: '#eb8f34'
     },{
         name: 'Integration',
-        question: 'Are relevant data sources integrated into the TARA process so that you can easily access and process the results?',
+        question: 'Is the pool of data sources integrated into the TARA creation process and accessible to this data-driven TARA section?',
         color: '#dfeb34'
     },{
         name: 'Augmentation',
-        question: 'Have you established a monitoring mechanism to scan data sources for information that could lead to a reassessment of risk or a redefinition of risk treatment options?',
+        question: 'Is there a monitoring in place to scan data sources for information that could lead to a reassessment of risk or a redefinition of risk treatment options for this data-driven TARA section?',
         color: '#3aeb34'
     },
 ]
