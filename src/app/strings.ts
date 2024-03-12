@@ -9,23 +9,23 @@ export enum Capability{
 export const capabilities = [
     {
         name: 'Damage Scenarios Identification',
-        explanation: 'Part of the asset identification task. Identify a damage scenario for each compromised cybersecurity asset of the item.',
+        explanation: 'Part of the asset identification task. Identify a damage scenario for each compromised cybersecurity asset of the item.\n Examples of external data sources: CWE, JVN, CAPEC, VulDB, ...',
         kind: Capability.DAMAGE
     },{
         name: 'Impact Rating',
-        explanation: 'Determine the impact of each damage scenario in the Safety (S), Financial (F), Operational (O), and Privacy (P) categories as a rating.',
+        explanation: 'Determine the impact of each damage scenario in the Safety (S), Financial (F), Operational (O), and Privacy (P) categories as a rating.\n Examples of external data sources: CVSS, NVD, JVN, CAPEC, VulDB, ...',
         kind: Capability.IMPACT
     },{
         name: 'Attack Path Analysis',
-        explanation: 'Identify the attack paths that implement each threat scenario.',
+        explanation: 'Identify the attack paths that implement each threat scenario.\n Examples of external data sources: ATT&CK, CAPEC, VulDB, ...',
         kind: Capability.ATTACK
     },{
         name: 'Feasibility Rating',
-        explanation: 'Determine the attack feasibility for each attack path.',
+        explanation: 'Determine the attack feasibility for each attack path.\n Examples of external data sources: CVSS, CWE, NVD, CAPEC, VulDB, ...',
         kind: Capability.FEASIB
     },{
         name: 'Risk Treatment Decision',
-        explanation: 'Determine a risk treatment option for each threat scenario by considering its calculated risk value. The available options are to avoid, reduce, share, or retain the risk.',
+        explanation: 'Determine a risk treatment option for each threat scenario by considering its calculated risk value. The available options are to avoid, reduce, share, or retain the risk. \n Examples of external data sources: CWE, ATT&CK, CAPEC, D3FEND, VulDB, ...',
         kind: Capability.RISKTREAT
     },
 ]
