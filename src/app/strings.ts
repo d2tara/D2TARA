@@ -9,23 +9,23 @@ export enum Capability{
 export const capabilities = [
     {
         name: 'Damage Scenarios Identification',
-        explanation: '<strong>Description:</strong> Part of the asset identification task. Identify a damage scenario for each compromised cybersecurity asset of the item. <strong>Expected input:</strong> damage description. <strong>Examples of external data sources:</strong> CWE, JVN, CAPEC, VulDB.',
+        explanation: 'Description: Part of the asset identification task. Identify a damage scenario for each compromised cybersecurity asset of the item. Expected input: damage description. Examples of external data sources: CWE, JVN, CAPEC, VulDB.',
         kind: Capability.DAMAGE
     },{
         name: 'Impact Rating',
-        explanation: 'Determine the impact of each damage scenario in the Safety, Financial, Operational, and Privacy categories as a rating. Expected input: impact ratings. Examples of external data sources: CVSS, NVD, JVN, CAPEC, VulDB.',
+        explanation: 'Description: Determine the impact of each damage scenario in the Safety, Financial, Operational, and Privacy categories as a rating. Expected input: impact ratings. Examples of external data sources: CVSS, NVD, JVN, CAPEC, VulDB.',
         kind: Capability.IMPACT
     },{
         name: 'Attack Path Analysis',
-        explanation: 'Identify the attack paths that implement each threat scenario. Expected input: tactics, techniques, and procedures (TTP). Examples of external data sources: ATT&CK, CAPEC, VulDB.',
+        explanation: 'Description: Identify the attack paths that implement each threat scenario. Expected input: tactics, techniques, and procedures (TTP). Examples of external data sources: ATT&CK, CAPEC, VulDB.',
         kind: Capability.ATTACK
     },{
         name: 'Feasibility Rating',
-        explanation: 'Determine the attack feasibility for each attack path. Expected input: feasibility rating. Examples of external data sources: CVSS, CWE, NVD, CAPEC, VulDB.',
+        explanation: 'Description: Determine the attack feasibility for each attack path. Expected input: feasibility rating. Examples of external data sources: CVSS, CWE, NVD, CAPEC, VulDB.',
         kind: Capability.FEASIB
     },{
         name: 'Risk Treatment Decision',
-        explanation: 'Determine a risk treatment option for each threat scenario by considering its calculated risk value. The available options are to avoid, reduce, share, or retain the risk. Expected input: mitigation and detection strategies. Examples of external data sources: CWE, ATT&CK, CAPEC, D3FEND, VulDB.',
+        explanation: 'Description: Determine a risk treatment option for each threat scenario by considering its calculated risk value. The available options are to avoid, reduce, share, or retain the risk. Expected input: mitigation and detection strategies. Examples of external data sources: CWE, ATT&CK, CAPEC, D3FEND, VulDB.',
         kind: Capability.RISKTREAT
     },
 ]
