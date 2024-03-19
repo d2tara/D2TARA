@@ -1,3 +1,8 @@
+
+Capabiity Breakdown and Resulting Maturity Level:
+
+  <hr />
+
 <div class="chart">
     <apx-chart
       [series]="chartOptions.series!"
@@ -13,5 +18,5 @@
       [xaxis]="chartOptions.xaxis!"
     ></apx-chart>
   </div><br>
-  <div class="maturityLevel">Maturity Score: <b>{{dataService.maturity}}</b></div><br>
+  <div class="maturityLevel">Maturity Level: <b>{{dataService.maturity}}</b></div><br>
   <mat-progress-bar [value]="dataService.maturityLevel/(dataService.maturityLevels.length-1)*100"></mat-progress-bar>
