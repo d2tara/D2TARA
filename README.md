@@ -8,4 +8,4 @@ The tool is available at https://kriskoett.github.io/D2TARA/.
 - On the right side of the application, the achieved capability levels are visualized in a radar chart and the resulting overall TARA maturity level is displayed.
 
 ## Additional Material
-An overview of our standard pool of external data sources is provided in the standardpool.xlsx spreadsheet. Note that the data sources included are not exhaustive and can be expanded and customized to meet an organization's specific needs.
+An overview of our standard pool of external data sources is provided as an Excel spreadsheet and screenshot in the materials folder. Please note that the data sources included are not exhaustive and can be expanded and customized to meet an organization's specific needs.
