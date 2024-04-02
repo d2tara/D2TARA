@@ -9,7 +9,7 @@ export enum Capability{
 export const capabilities = [
     {
         name: 'Damage Scenarios Identification',
-        explanation: 'Description: Part of the asset identification task. Identify a damage scenario for each compromised cybersecurity asset of the item. Expected input: damage description. Examples of external data sources: CWE, JVN, CAPEC, VulDB.',
+        explanation: 'Description: Part of the asset identification task. Identify a damage scenario for each compromised cybersecurity asset of the item. Expected input: damage description. Examples of external data sources: CWE, JVN, CAPEC, VulDB (for further examples see folder MATERIAL in GitHub Repo).',
         kind: Capability.DAMAGE
     },{
         name: 'Impact Rating',
@@ -33,7 +33,7 @@ export const capabilities = [
 export enum CapabilityLevel{
     Undefined,
     Adhoc,
-    Completeness,
+    Standardization,
     Integration,
     Augmentation
 }
@@ -53,11 +53,11 @@ export const capabilityLevels = [
         color: '#eb8f34'
     },{
         name: 'Integration',
-        question: 'Is the pool of data sources integrated into the TARA creation process and accessible to this data-driven TARA section?',
+        question: 'Is the pool of data sources integrated into the TARA process?',
         color: '#dfeb34'
     },{
         name: 'Augmentation',
-        question: 'Is there a monitoring in place to scan data sources for information that could lead to a reassessment of risk or a redefinition of risk treatment options for this data-driven TARA section?',
+        question: 'Is there a monitoring in place to scan data sources for information that could lead to a reiteration of the TARA process?',
         color: '#3aeb34'
     },
 ]

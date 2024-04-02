@@ -34,11 +34,11 @@ export class DataService {
       data[Capability.FEASIB] >= CapabilityLevel.Adhoc){
         maturityLevel = MaturityLevel.Initial;
       }
-    if (data[Capability.DAMAGE] >= CapabilityLevel.Completeness &&
-      data[Capability.IMPACT] >= CapabilityLevel.Completeness &&
-      data[Capability.ATTACK] >= CapabilityLevel.Completeness &&
-      data[Capability.FEASIB] >= CapabilityLevel.Completeness &&
-      data[Capability.RISKTREAT] >= CapabilityLevel.Completeness){
+    if (data[Capability.DAMAGE] >= CapabilityLevel.Standardization &&
+      data[Capability.IMPACT] >= CapabilityLevel.Standardization &&
+      data[Capability.ATTACK] >= CapabilityLevel.Standardization &&
+      data[Capability.FEASIB] >= CapabilityLevel.Standardization &&
+      data[Capability.RISKTREAT] >= CapabilityLevel.Standardization){
         maturityLevel = MaturityLevel.Core;
     }
     if (data[Capability.DAMAGE] >= CapabilityLevel.Integration &&
